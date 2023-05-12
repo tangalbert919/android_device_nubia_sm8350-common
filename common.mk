@@ -303,6 +303,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.neuralnetworks@1.3.vendor
 
+# Partitions
+PRODUCT_USE_DYNAMIC_PARTITIONS := true
+
 # Perfd (dummy)
 PRODUCT_PACKAGES += \
     libqti-perfd-client
