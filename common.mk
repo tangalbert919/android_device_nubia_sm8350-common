@@ -343,6 +343,10 @@ PRODUCT_PACKAGES += \
     librmnetctl \
     libxml2
 
+# Ramdisk
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/rootdir/etc/fstab.qcom:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/first_stage_ramdisk/fstab.qcom
+
 # Recovery
 PRODUCT_PACKAGES += \
     librecovery_updater_nubia
