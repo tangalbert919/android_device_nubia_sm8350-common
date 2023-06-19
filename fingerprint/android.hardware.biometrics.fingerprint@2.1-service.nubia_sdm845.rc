@@ -23,7 +23,7 @@ on boot
     chown system system /dev/spidev0.0
     chmod 0660 /dev/spidev0.0
 
-service vendor.fps_hal /vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service.nubia_sdm845
+service vendor.fps_hal /vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service.nubia_lahaina
     # "class hal" causes a race condition on some devices due to files created
     # in /data. As a workaround, postpone startup until later in boot once
     # /data is mounted.

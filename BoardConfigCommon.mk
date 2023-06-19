@@ -6,7 +6,7 @@
 
 BOARD_VENDOR := nubia
 
-COMMON_PATH := device/nubia/sdm845-common
+COMMON_PATH := device/nubia/sm8350-common
 
 BUILD_BROKEN_DUP_RULES := true
 BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
@@ -27,7 +27,7 @@ TARGET_2ND_CPU_VARIANT := generic
 TARGET_2ND_CPU_VARIANT_RUNTIME := kryo385
 
 # Bootloader
-TARGET_BOOTLOADER_BOARD_NAME := sdm845
+TARGET_BOOTLOADER_BOARD_NAME := lahaina
 TARGET_NO_BOOTLOADER := true
 
 # Kernel
@@ -40,10 +40,10 @@ BOARD_KERNEL_PAGESIZE := 4096
 BOARD_KERNEL_SEPARATED_DTBO := true
 BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOT_HEADER_VERSION)
 TARGET_KERNEL_ARCH := arm64
-TARGET_KERNEL_SOURCE := kernel/nubia/sdm845
+TARGET_KERNEL_SOURCE := kernel/nubia/lahaina
 
 # Platform
-TARGET_BOARD_PLATFORM := sdm845
+TARGET_BOARD_PLATFORM := lahaina
 TARGET_BOARD_PLATFORM_GPU := qcom-adreno630
 
 # ANT+
@@ -123,7 +123,7 @@ ENABLE_VENDOR_RIL_SERVICE := true
 TARGET_RIL_VARIANT := caf
 
 # Security patch level
-VENDOR_SECURITY_PATCH := 2018-06-05
+VENDOR_SECURITY_PATCH := 2023-02-01
 
 # SELinux
 include device/qcom/sepolicy_vndr-legacy-um/SEPolicy.mk
@@ -155,4 +155,4 @@ WIFI_HIDL_UNIFIED_SUPPLICANT_SERVICE_RC_ENTRY := true
 WPA_SUPPLICANT_VERSION := VER_0_8_X
 
 # Inherit from the proprietary version
-include vendor/nubia/sdm845-common/BoardConfigVendor.mk
+include vendor/nubia/sm8350-common/BoardConfigVendor.mk

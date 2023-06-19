@@ -4,9 +4,9 @@
  */
 
 cc_binary {
-    name: "android.hardware.light-service.nubia_sdm845",
-    init_rc: ["android.hardware.light-service.nubia_sdm845.rc"],
-    vintf_fragments: ["android.hardware.light-service.nubia_sdm845.xml"],
+    name: "android.hardware.light-service.nubia_lahaina",
+    init_rc: ["android.hardware.light-service.nubia_lahaina.rc"],
+    vintf_fragments: ["android.hardware.light-service.nubia_lahaina.xml"],
     relative_install_path: "hw",
     srcs: [
         "main.cpp",

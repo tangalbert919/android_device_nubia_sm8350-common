@@ -125,7 +125,7 @@ ro.charger.enable_suspend=true
 
 # Chipset
 ro.soc.manufacturer=Qualcomm
-ro.soc.model=SDM845
+ro.soc.model=SM8350
 
 # CNE
 persist.vendor.cne.feature=1

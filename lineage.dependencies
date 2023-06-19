@@ -1,6 +1,6 @@
 [
   {
-    "repository": "android_kernel_nubia_sdm845",
-    "target_path": "kernel/nubia/sdm845"
+    "repository": "android_kernel_nubia_sm8350",
+    "target_path": "kernel/nubia/sm8350"
   }
 ]

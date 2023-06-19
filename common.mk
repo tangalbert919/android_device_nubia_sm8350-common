@@ -1,6 +1,5 @@
-
 #
-# Copyright (C) 2018-2020 The LineageOS Project
+# Copyright (C) 2018-2023 The LineageOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -145,12 +144,12 @@ PRODUCT_PACKAGES += \
     android.hardware.graphics.mapper@2.0-impl-qti-display \
     android.hardware.memtrack@1.0-impl \
     android.hardware.memtrack@1.0-service \
-    gralloc.sdm845 \
-    hwcomposer.sdm845 \
+    gralloc.lahaina \
+    hwcomposer.lahaina \
     libdisplayconfig.qti \
     libqdMetaData \
     libtinyxml \
-    memtrack.sdm845 \
+    memtrack.lahaina \
     vendor.display.config@1.0.vendor \
     vendor.display.config@2.0 \
     vendor.qti.hardware.display.allocator@1.0-service
@@ -162,7 +161,7 @@ PRODUCT_PACKAGES += \
 
 # Fingerprint
 PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint@2.1-service.nubia_sdm845
+    android.hardware.biometrics.fingerprint@2.1-service.nubia_lahaina
 
 # GPS
 PRODUCT_PACKAGES += \
@@ -209,7 +208,7 @@ PRODUCT_PACKAGES += \
 
 # Lights
 PRODUCT_PACKAGES += \
-    android.hardware.light-service.nubia_sdm845
+    android.hardware.light-service.nubia_lahaina
 
 # LiveDisplay
 PRODUCT_PACKAGES += \
@@ -263,7 +262,7 @@ PRODUCT_PACKAGES += \
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power@1.3.vendor \
-    android.hardware.power@1.3-service.nubia_sdm845-libperfmgr
+    android.hardware.power@1.3-service.nubia_lahaina-libperfmgr
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/power/configs/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
@@ -367,4 +366,4 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/wifi/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/WCNSS_qcom_cfg.ini
 
 # Inherit the proprietary files
-$(call inherit-product, vendor/nubia/sdm845-common/sdm845-common-vendor.mk)
+$(call inherit-product, vendor/nubia/sm8350-common/sm8350-common-vendor.mk)

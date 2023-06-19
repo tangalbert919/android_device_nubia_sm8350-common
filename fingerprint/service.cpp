@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-#define LOG_TAG "android.hardware.biometrics.fingerprint@2.1-service.nubia_sdm845"
+#define LOG_TAG "android.hardware.biometrics.fingerprint@2.1-service.nubia_lahaina"
 
 #include <android/log.h>
 #include <hidl/HidlSupport.h>

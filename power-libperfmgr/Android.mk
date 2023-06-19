@@ -1,9 +1,9 @@
 LOCAL_PATH := $(call my-dir)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := android.hardware.power@1.3-service.nubia_sdm845-libperfmgr
-LOCAL_INIT_RC := android.hardware.power@1.3-service.nubia_sdm845-libperfmgr.rc
-LOCAL_VINTF_FRAGMENTS := android.hardware.power@1.3-service.nubia_sdm845-libperfmgr.xml
+LOCAL_MODULE := android.hardware.power@1.3-service.nubia_lahaina-libperfmgr
+LOCAL_INIT_RC := android.hardware.power@1.3-service.nubia_lahaina-libperfmgr.rc
+LOCAL_VINTF_FRAGMENTS := android.hardware.power@1.3-service.nubia_lahaina-libperfmgr.xml
 LOCAL_VENDOR_MODULE := true
 LOCAL_MODULE_RELATIVE_PATH := hw
 
